@@ -1,17 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Board</title>
-</head>
-<body>
-    <header>
-        <h1>Dev Dash-Board</h1>
-        <nav>
 
-        </nav>
-    </header>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        .poppins-font {
+            font-family: "Poppins";
+            
+        }
+    </style>
+
+    <!-- Daisy Ui CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @theme {
+          --color-clifford: #da373d;
+          --base-bg: #F4F7FF;
+        }
+      </style>
+</head>
+
+<body class="poppins-font bg-[#F4F7FF]">
+   <!-- header Section -->
+    <section class="pt-4 pb-4">
+        <header class="bg-white border border-solid border-white rounded-md shadow-md px-3 py-2 w-[95%] lg:w-[85%] mx-auto">
+            <nav class="flex justify-between">
+                <div class="flex text-center items-center gap-2">
+                    <img class="w-10" src="./assets/logo.png" alt="">
+                    <h1>DevBoard</h1>
+                </div>
+    
+                <div class="flex text-center gap-5">
+                    <button class="flex text-center items-center gap-2 border-thin bg-[#F4F7FF] rounded-xl px-2 py-1 ">
+                       <img class="w-5" src="./assets/checkbox.png" alt="">
+                       <p>23</p>
+                    </button>
+                    <button class="border-thin bg-[#F4F7FF] rounded-full px-2 py-1">
+                        <img class="w-[25px]" src="./assets/theme-btn.png" alt="">
+                    </button>
+                </div>
+            </nav>
+        </header>
+    </section>
 
     <main>
         <section>
