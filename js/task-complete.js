@@ -63,7 +63,8 @@ document.getElementById('task-box-con')
 
             const newDiv = document.createElement('div')
             newDiv.innerHTML = `<div id = "clear"  class = "border-thin bg-[#F4F7FF] py-1  px-1 rounded-sm shadow-sm mt-4">You have completed the task ${getSlogan('slogan3')} at ${formateTime} </div>`
-    
+            logContainer.appendChild(newDiv);
+
             getButton('btn3');
         }
 
@@ -147,4 +148,12 @@ document.getElementById('task-box-con')
     datePTag.innerText = formatedDate;
     containerDate.appendChild(datePTag);
 
+
+    document.getElementById('bg-color-btn')
+    .addEventListener('click', function(){
+        let bodyContainer = document.getElementById('part-body');
+        let randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+
+        bodyContainer.style.backgroundColor = randomColor;
+    })
     
